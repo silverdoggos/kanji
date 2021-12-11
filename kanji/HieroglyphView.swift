@@ -13,7 +13,6 @@ struct HieroglyphView: View {
     let size: CGSize
     
     var body: some View {
-        
         ZStack {
             color
             Text(text)

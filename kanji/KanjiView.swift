@@ -42,9 +42,9 @@ struct KanjiView: View {
                 data.forEach({
                     let lowercassedArray = $0.meanings.map { $0.lowercased() }
                     
-                                        if lowercassedArray.contains(self.searchingText.lowercased()) {
-                                            searchingData.append($0)
-                                        }
+                    if lowercassedArray.contains(self.searchingText.lowercased()) {
+                        searchingData.append($0)
+                    }
                 })
             })
             
@@ -54,7 +54,7 @@ struct KanjiView: View {
                 
                 ScrollView {
                     LazyVGrid(columns: layout,  spacing: 20) {
-                        ForEach(searchingData.isEmpty ? data : searchingData) { item in
+                        ForEach(searchingText.isEmpty ? data : searchingData) { item in
                             HieroglyphView(text: "\(item.kanji)", color: getColor(for: item), size: CGSize(width: KanjiView.itemSize, height: KanjiView.itemSize) )
                                 .onTapGesture(count: 1, perform: {
                                     openDiscription()
