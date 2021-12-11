@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import AVKit
+//import AVKit
 
 struct DescriptionView: View {
     let hieroglyph: Hieroglyph
