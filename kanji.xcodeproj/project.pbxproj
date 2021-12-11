@@ -11,6 +11,12 @@
 		6E3E4DF9261F3F860088AFFB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3E4DF8261F3F860088AFFB /* ContentView.swift */; };
 		6E3E4DFB261F3F880088AFFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E3E4DFA261F3F880088AFFB /* Assets.xcassets */; };
 		6E3E4DFE261F3F880088AFFB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E3E4DFD261F3F880088AFFB /* Preview Assets.xcassets */; };
+		6E3E4E07261F3FC20088AFFB /* KanjiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3E4E06261F3FC20088AFFB /* KanjiView.swift */; };
+		6E3E4E0A261F46DF0088AFFB /* HieroglyphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3E4E09261F46DF0088AFFB /* HieroglyphView.swift */; };
+		6EC1E7062623873C005EC47C /* kanjiapi_full.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EC1E7052623873C005EC47C /* kanjiapi_full.json */; };
+		6EE47D1B26233E310034A886 /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE47D1A26233E310034A886 /* DescriptionView.swift */; };
+		6EE47D2526237E0D0034A886 /* Hieroglyph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE47D2426237E0D0034A886 /* Hieroglyph.swift */; };
+		6EE47D2826237EDD0034A886 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE47D2726237EDD0034A886 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		6E3E4DFA261F3F880088AFFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E3E4DFD261F3F880088AFFB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6E3E4DFF261F3F880088AFFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E3E4E06261F3FC20088AFFB /* KanjiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiView.swift; sourceTree = "<group>"; };
+		6E3E4E09261F46DF0088AFFB /* HieroglyphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HieroglyphView.swift; sourceTree = "<group>"; };
+		6EC1E7052623873C005EC47C /* kanjiapi_full.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kanjiapi_full.json; sourceTree = "<group>"; };
+		6EE47D1A26233E310034A886 /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
+		6EE47D2426237E0D0034A886 /* Hieroglyph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hieroglyph.swift; sourceTree = "<group>"; };
+		6EE47D2726237EDD0034A886 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +66,14 @@
 			children = (
 				6E3E4DF6261F3F860088AFFB /* kanjiApp.swift */,
 				6E3E4DF8261F3F860088AFFB /* ContentView.swift */,
+				6E3E4E06261F3FC20088AFFB /* KanjiView.swift */,
+				6E3E4E09261F46DF0088AFFB /* HieroglyphView.swift */,
+				6EE47D1A26233E310034A886 /* DescriptionView.swift */,
+				6EE47D2426237E0D0034A886 /* Hieroglyph.swift */,
+				6EE47D2726237EDD0034A886 /* DataManager.swift */,
 				6E3E4DFA261F3F880088AFFB /* Assets.xcassets */,
 				6E3E4DFF261F3F880088AFFB /* Info.plist */,
+				6EC1E7052623873C005EC47C /* kanjiapi_full.json */,
 				6E3E4DFC261F3F880088AFFB /* Preview Content */,
 			);
 			path = kanji;
@@ -127,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E3E4DFE261F3F880088AFFB /* Preview Assets.xcassets in Resources */,
+				6EC1E7062623873C005EC47C /* kanjiapi_full.json in Resources */,
 				6E3E4DFB261F3F880088AFFB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +157,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EE47D2526237E0D0034A886 /* Hieroglyph.swift in Sources */,
 				6E3E4DF9261F3F860088AFFB /* ContentView.swift in Sources */,
+				6E3E4E0A261F46DF0088AFFB /* HieroglyphView.swift in Sources */,
+				6EE47D2826237EDD0034A886 /* DataManager.swift in Sources */,
 				6E3E4DF7261F3F860088AFFB /* kanjiApp.swift in Sources */,
+				6E3E4E07261F3FC20088AFFB /* KanjiView.swift in Sources */,
+				6EE47D1B26233E310034A886 /* DescriptionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +221,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -252,7 +276,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -267,6 +291,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"kanji/Preview Content\"";
 				DEVELOPMENT_TEAM = X63B5429QJ;
@@ -277,8 +302,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = shishkin.art.kanji;
+				PRODUCT_BUNDLE_IDENTIFIER = shishkinart.kanji;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,6 +315,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"kanji/Preview Content\"";
 				DEVELOPMENT_TEAM = X63B5429QJ;
@@ -301,6 +328,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = shishkin.art.kanji;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
