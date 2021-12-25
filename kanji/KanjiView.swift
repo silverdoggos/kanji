@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-private enum ColoursT {
-    static let t1 = Color(red: 0.11, green: 0.61, blue: 0.99)
-    static let t2 = Color(red: 0.98, green: 0.50, blue: 0.32)
-    static let t3 = Color(red: 0.33, green: 0.90, blue: 0.76)
-    static let t4 = Color(red: 0.23, green: 0.23, blue: 0.60)
-    static let t5 = Color(red: 0.99, green: 0.45, blue: 0.45)
+private enum GradeColours {
+    static let g1 = Color(red: 0.11, green: 0.61, blue: 0.99)
+    static let g2 = Color(red: 0.98, green: 0.50, blue: 0.32)
+    static let g3 = Color(red: 0.33, green: 0.90, blue: 0.76)
+    static let g4 = Color(red: 0.23, green: 0.23, blue: 0.60)
+    static let g5 = Color(red: 0.99, green: 0.45, blue: 0.45)
 }
 
 struct KanjiView: View {
@@ -94,17 +94,17 @@ struct KanjiView: View {
     private func getColor(for hieroglyph: Hieroglyph) -> Color {
         switch hieroglyph.grade {
         case 1:
-            return ColoursT.t1
+            return GradeColours.g1
         case 2:
-            return ColoursT.t2
+            return GradeColours.g2
         case 3:
-            return ColoursT.t3
+            return GradeColours.g3
         case 4:
-            return ColoursT.t4
+            return GradeColours.g4
         case 5:
-            return ColoursT.t5
+            return GradeColours.g5
         default:
-            return ColoursT.t5
+            return GradeColours.g5
         }
     }
 }
